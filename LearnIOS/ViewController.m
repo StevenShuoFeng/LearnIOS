@@ -14,6 +14,19 @@
 
 @implementation ViewController
 
+@synthesize decisionText=decisionText_;
+
+-(IBAction)buttonPressed:(id)sender
+{
+    decisionText_.text = @"Go for it!";
+}
+
+//- (void)dealloc
+//{
+//    [decisionText_ release];
+//    [super dealloc];
+//}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
